@@ -1,0 +1,12 @@
+<?php
+$signal=$_POST["signal"];
+if ($signal=="Green"){
+    echo "Go.";
+}elseif ($signal=="Yellow"){
+    echo "Slow down.";
+}elseif ($signal=="Red"){
+    echo "Stop.";
+}else{
+    " ";
+}
+?>
