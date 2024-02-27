@@ -1,0 +1,9 @@
+<?php
+$account=$_POST["acc"];
+if ($account=="Premium"){
+    echo "Welcome Premium User!";
+}
+else {
+    echo "Welcome Basic User!";
+}
+?>
