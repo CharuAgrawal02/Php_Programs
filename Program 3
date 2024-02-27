@@ -1,0 +1,15 @@
+<?php
+$steps=$_POST["steps"];
+if ($steps<=5000){
+    echo "The Fitness level is 'Beginner'.";
+}
+elseif($steps>5000 && $steps<=10000){
+    echo "The Fitness level is 'Intermediate'.";
+}
+elseif ($steps>10000){
+    echo "The Fitness level is 'Advanced'.";
+}
+else{
+    echo "Input Steps correctly.";
+}
+?>
