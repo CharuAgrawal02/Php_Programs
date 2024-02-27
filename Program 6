@@ -1,0 +1,34 @@
+<?php
+$users=array(
+    array("name"=>"Charu","pass"=>2020),
+    array("name"=>"Anushka","pass"=>9090),
+    array("name"=>"Garbhi","pass"=>9494),
+    array("name"=>"Divija","pass"=>1234),
+    array("name"=>"Kajal","pass"=>3232)
+);
+if ($_SERVER["REQUEST_METHOD"]=="POST"){
+    $username=$_POST["usrnm"];
+    $pass=$_POST["pass"];
+    // $nm=FALSE;
+    // $ps=FALSE;
+    foreach ($users as $cred) {
+        if ($username==$cred["name"]){
+            // $nm=TRUE;
+            if ($pass==$cred["pass"]){
+                // $ps=TRUE;
+                echo "Access granted<br>";
+                echo "Hi $username <br>";
+                break;
+            }
+        }
+    }
+    if ($username!=$cred["name"]){
+        echo "user dosen't exists<br>";
+    }
+    elseif($pass!=$cred["pass"]){
+        echo "invalid password<br>";    
+    }
+    else{
+        echo "Login, Successfully!!";
+    }
+}
