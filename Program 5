@@ -1,0 +1,9 @@
+<?php
+$amount=(int)$_POST["amt"];
+if($amount>1000){
+    echo "Sufficient Amount for discount. Discount Granted!";
+}
+else{
+    echo "No Discount for this amount.";
+}
+?>
