@@ -1,0 +1,6 @@
+<?php
+$correctAns=45;
+$mrkPrCortAns=5;
+$totalMrks= $correctAns*$mrkPrCortAns;
+echo "Total marks is/are => $totalMrks";
+?>
