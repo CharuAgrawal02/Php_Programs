@@ -1,0 +1,11 @@
+<?php
+$blog=$_POST["blog"];
+if(strlen($blog) > 50){
+    echo "your title exceeding character limit<br>";
+    $blog = substr($blog,0, 50);
+    echo "your truncated title is => ", $blog;
+} 
+else {
+    echo"title limit ok!!";
+}
+?>
