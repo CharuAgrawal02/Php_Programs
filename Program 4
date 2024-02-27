@@ -1,0 +1,20 @@
+<?php
+$score=$_POST["marks"];
+if ($score<60){
+    echo "Grade is 'F'.";
+}
+elseif($score>=60 && $score<=70){
+    echo "Grade is 'D'.";
+}
+elseif($score>=71 && $score<=80){
+    echo "Grade is 'C'.";
+}
+elseif($score>=81 && $score<=90){
+    echo "Grade is 'B'.";
+}
+elseif($score>90){
+    echo "Grade is 'A'.";
+}
+else{
+    echo "Enter marks correctly.";
+}
