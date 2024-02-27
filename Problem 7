@@ -1,0 +1,9 @@
+<?php
+$temp=$_POST["temp"];
+if ($temp>25){
+    echo "It's a Sunny Day";
+}
+else{
+    echo "Consider taking an umbrella.";
+}
+?>
