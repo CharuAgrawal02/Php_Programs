@@ -1,0 +1,9 @@
+<?php
+$price=(int)$_POST["price"];
+if ($price>=5000){
+    $discount=$price/10;
+    echo "Total amount to pay: $discount";
+}else{
+    echo "Total amount to pay: $price";
+}
+?>
