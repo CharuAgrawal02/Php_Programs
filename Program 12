@@ -1,0 +1,9 @@
+<?php
+$subs=$_POST["subs"];
+if ($subs=="New"){
+    echo "Trial Period Granted!";
+}
+else{
+    echo "Already Subscribed!";
+}
+?>
